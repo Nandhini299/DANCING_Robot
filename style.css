@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    background-color: pink;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.head, .left-arm, .torso, .right-arm, .left-leg, .right-leg
+{
+    background-color: hotpink;
+} 
+
+.head{
+    height:150px;
+    width: 200px;
+    border-radius: 150px 150px 0 0;
+    margin:0 auto;
+}
+
+.eyes
+{
+    position: relative;
+    top:80px;
+}
+
+.left-eye, .right-eye{
+    width:30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: white;
+    display: inline-block;
+}
+
+.left-eye{
+    margin-left: 40px;
+}
+
+.right-eye
+{
+    margin-left: 55px;
+}
+
+.upper_body{
+    width: 300px;
+    height: 150px;
+    display:flex;
+    border-radius: 50px 50px 0 0;
+    margin:0 auto;
+}
+
+.torso{
+    width: 200px;
+    height: 200px;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.left-arm, .right-arm{
+        width: 40px;
+        height: 125px;
+        border-radius: 100px;
+        margin-top: 20px;
+}
+
+.left-arm{
+    margin-right: 10px;
+}
+
+.right-arm{
+    margin-left: 10px;
+}
+
+.lower_body{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.left-leg, .right-leg{
+    width: 40px;
+    height: 120px;
+    border-radius: 0 0 100px 100px;
+    display: inline-block;
+}
+
+.left-leg{
+    margin-left: 45px;
+}
+
+.right-leg{
+    margin-left:30px;
+}
+
+.robet:hover, .head{
+    animation: movehead 2s infinite;
+}
+
+/* key frames what should happens in step by step */
+@keyframes movehead
+{
+    0%{
+        width: 200px;
+    }
+    25%
+    {
+        width: 300px;
+    }
+    50%
+    {
+        width: 200px;
+    }
+    75%
+    {
+        width: 300px;
+    }
+    100%
+    {
+        width: 200px;
+    }
+}
+
+.robot:hover, .left-arm{
+    animation: moveleftarm 2s infinite;
+}
+
+@keyframes moveleftarm
+{
+    0%
+    {
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+    25%
+    {
+        transform: rotate(90deg);
+        transform-origin: top-center;
+    }
+    50%
+    {
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+    75%
+    {
+        transform: rotate(90deg);
+        transform-origin: top-center;
+    }
+    100%
+    {
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+}
+
+robot:hover, .right-arm{
+    animation: moverightarm 2s infinite;
+}
+
+@keyframes moverightarm
+{
+    0%
+    {
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+    25%
+    {
+        transform: rotate(-90deg);
+        transform-origin: top-center;
+    }
+    50%
+    {
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+    75%
+    {
+        transform: rotate(-90deg);
+        transform-origin: top-center;
+    }
+    100%
+    {
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+}
+
+.robot:hover, .torso{
+    animation: movetorso 5s infinite;
+    border-radius: 50px 50px 50px 50px;
+}
+
+@keyframes movetorso
+{
+    0%
+    {
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+    25%
+    {
+        transform: rotate(360deg);
+        transform-origin: top-center;
+    }
+    50%
+    {
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+    75%
+    {
+        transform: rotate(360deg);
+        transform-origin: top-center;
+    }
+    100%
+    {
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+}
+
+.robot:hover, .left-leg{
+    animation: moveleftleg 2s infinite;
+}
+
+@keyframes moveleftleg
+{
+    0%
+    {
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+    25%
+    {
+        transform: rotate(45deg);
+        transform-origin: top-center;
+    }
+    50%
+    {
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+    75%
+    {
+        transform: rotate(45deg);
+        transform-origin: top-center;
+    }
+    100%
+    {
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+}
+
+robot:hover, .right-leg{
+    animation: moverightleg 2s infinite;
+}
+
+@keyframes moverightleg
+{
+    0%
+    {
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+    25%
+    {
+        transform: rotate(-45deg);
+        transform-origin: top-center;
+    }
+    50%
+    {
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+    75%
+    {
+        transform: rotate(-45deg);
+        transform-origin: top-center;
+    }
+    100%
+    {
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+}
